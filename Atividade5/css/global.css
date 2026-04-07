@@ -1,0 +1,132 @@
+* {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --laranja-bas: #df6d0f;
+    --marrom-font: #4b270f;
+    --link-menu: #fae6ae;
+    --letra-menu: #fce7d0;
+    --sombreamento: rgba(99, 58, 11, 0.596);
+    --fundo: #dfc9ad;
+
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+    background-color: var(--fundo);
+    line-height: 1.6;
+}
+
+header {
+    background-image: url(../imagens/teste1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: var(--sombreamento);
+    
+}
+
+header * {
+    position: relative;
+ 
+}
+
+.quadrado-fundo {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* NAV FIXO NO TOPO */
+nav {
+    position: fixed; /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center; /* centraliza os links */
+    align-items: center;
+
+    gap: 40px; /* espaço entre os links */
+
+    padding: 15px 0; /* espaço em cima e embaixo */
+    
+    background-color: var(--laranja-bas);
+    z-index: 1000; /* garante que fique sobre o conteúdo */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.322);
+    
+}
+
+a {
+    color: var(--link-menu);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* dar um efeito ao passar o mouse */
+a:hover {
+    opacity: 0.8;
+}
+
+p {
+    margin: 10px;
+    text-align: justify;
+}
+
+h2 {
+    margin-bottom: 7px;
+    color: var(--marrom-font);
+}
+
+ul, li {
+    text-align: left;
+}
+
+.frase {
+    color: var(--letra-menu);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+}
+
+.quadrado-mini {
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #cecdcd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.quadrado-mini:hover {
+    border-color: var(--laranja-bas);
+    transform: perspective(600px) translateZ(15px);
+}
+
