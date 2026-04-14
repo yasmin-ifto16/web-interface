@@ -1,0 +1,57 @@
+body {
+    background-color: #1d1c22;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #dddfe9;
+}
+
+.texto-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+
+.banner {
+    background-image: url(../imagens/gojira-header.png);
+    background-size: cover;
+  
+    height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1 {
+    color: #b3cce2;
+    font-size: 80px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -80px;
+}
+
+.card {
+    background-color: #464a5e; 
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.link-quadra {
+    color: aliceblue;
+    text-decoration: dotted;
+}
+
+p {
+    color: #b3cce2;
+    text-align: justify;
+}
