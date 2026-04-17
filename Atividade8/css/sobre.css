@@ -115,9 +115,18 @@ ul {
 }
 
 #tabela-godzilla {
-    border: 2px solid #6ee7b7;
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#tabela-godzilla tr {
+     border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+#tabela-godzilla th, td {
+    padding: 12px;
+    text-align: center;
 }
 
 #tabela-godzilla tbody tr:hover {
