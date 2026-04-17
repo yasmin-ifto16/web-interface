@@ -126,9 +126,5 @@ ul {
 }
 
 #tabela-godzilla tbody tr:hover {
-    background-color: #14142b;
-}
-
-#tabela-godzilla tbody tr:nth-child(even) {
-    background-color: #0d0d1a;
+    background-color: rgba(255, 255, 255, 0.05);
 }
