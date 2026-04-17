@@ -120,15 +120,20 @@ ul {
     margin-top: 10px;
 }
 
-#tabela-godzilla tr {
-     border-bottom: 1px solid rgba(56, 189, 248, 0.3);
-}
-
-#tabela-godzilla th, td {
+#tabela-godzilla th,
+#tabela-godzilla td {
     padding: 12px;
     text-align: center;
 }
 
-#tabela-godzilla tbody tr:hover {
+#tabela-godzilla th {
+    background-color: rgba(56, 189, 248, 0.2);
+}
+
+#tabela-godzilla tr {
+    border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+#tabela-godzilla tr:hover {
     background-color: rgba(255, 255, 255, 0.05);
 }
