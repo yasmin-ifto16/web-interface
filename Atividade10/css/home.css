@@ -1,0 +1,144 @@
+.banner {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.521)),
+    url('../imagens/recife-cosmico.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    letter-spacing: 1.5px;
+    color: aliceblue;
+    padding: 30px 80px;
+    margin-bottom: 90px;
+}
+
+/* pros coisas ficar no centro certinho */
+
+.conteudo-banner {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.banner h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.botao-card {
+    border-radius: 50px;
+    background-color: #e0960b;
+    padding: 5px 10px;
+    border-color: none;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+/* Os cards - os "mini quadros" */
+.card {
+    position: relative;
+    display: block;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    color: rgb(177, 112, 238);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    max-height: 22.5vh;
+    min-width: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.0);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.conter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.botao-explorar {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.205);
+
+    padding: 15px 30px;
+    border: 2px solid aliceblue;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+    }
+
+    .botao-explorar:hover {
+    transform: scale(1.1);
+    background-color: rgb(211, 63, 9);
+    border: 2px solid #e0960b;
+    }
+
+    .introducao {
+        padding: 80px 10%;
+        line-height: 1.8;
+    }
+
+    .introducao h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+
+    .introducao p {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .curiosidades {
+        padding: 80px 10%;
+    }
+
+    .curiosidades h2 {
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+
+    .curiosidades ul {
+        line-height: 2;
+        font-size: 18px;
+    }

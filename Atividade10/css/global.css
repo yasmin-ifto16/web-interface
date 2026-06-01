@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    color: whitesmoke;
+    font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;  /*Deixa suave a descida da tela quando for clicar lá no botão do id. Bom que também suaviza tudo*/
+
+}
+
+/*Fica no header */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-site {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c0b7ff;
+}
+
+/*o footer*/
+.realidade{
+    background-color: rgb(22, 5, 36);
+    padding: 50px;
+    text-align: center;
+}

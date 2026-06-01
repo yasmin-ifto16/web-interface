@@ -1,0 +1,192 @@
+
+body {
+    background-color: rgb(7, 7, 20);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+}
+
+.fundo-borrado {
+    display: flex;
+    gap: 40px;
+    padding-top: 87px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    flex: 1;
+}
+
+
+.conteudo-principal {
+    flex: 3;
+}
+
+
+.introducao {
+    margin-bottom: 80px;
+}
+
+.introducao h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 45px;
+}
+
+.introducao p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.teorias h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+
+.card-teoria {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    background-color: rgba(255,255,255,0.03);
+    padding: 30px;
+    border-radius: 20px;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.card-teoria:hover {
+    
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+.imagem {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.texto-card {
+    flex: 1;
+}
+
+.texto-card h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.texto-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.sidebar {
+    flex: 1;
+    background-color: rgba(255,255,255,0.03);
+    padding: 30px;
+    border-radius: 20px;
+    height: fit-content;
+    position: sticky;
+    top: 120px;
+    box-shadow: 0 10px 20px rgba(240, 240, 240, 0.2);
+    backdrop-filter: blur(1.7px);
+}
+
+.sidebar:hover {
+    background-color: rgb(35, 88, 71);
+    transition: 0.5s;
+    transform: rotateY(5px);
+}
+
+.sidebar:hover a {
+    color: rgb(245, 242, 235);
+}
+
+.sidebar h3 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #709ab3;
+    font-weight: 580;
+}
+
+
+.curiosidade {
+    margin-top: 100px;
+    background-color: rgba(255,255,255,0.03);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.curiosidade h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.curiosidade p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(22, 5, 36);
+    text-align: center;
+    padding: 40px;
+}
+
