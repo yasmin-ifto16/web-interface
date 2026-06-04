@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Biblioteca</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="formulario">
+
+            <h1>Cadastro da Biblioteca Astro</h1>
+
+            <form action="preenchido.html" method="get">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="nome@gmail.com" required>
+                
+                    <label for="celular">Telefone:</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+
+                </fieldset>
+
+                <div class="card">
+                    <h2>Gêneros Literários Favoritos</h2>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="drama" name="genero" value="Drama">
+                        <label for="drama">Drama</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="ficcao" name="genero" value="Ficção">
+                        <label for="ficcao">Ficção</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="romance" name="genero" value="Romance">
+                        <label for="romance">Romance</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="fantasia" name="genero" value="Fantasia">
+                        <label for="fantasia">Fantasia</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="terror" name="genero" value="Terror">
+                        <label for="terror">Terror</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="suspense" name="genero" value="Suspense">
+                        <label for="suspense">Suspense</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="aventura" name="genero" value="Aventura">
+                        <label for="aventura">Aventura</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="biografia" name="genero" value="Biografia">
+                        <label for="biografia">Biografia</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="poesia" name="genero" value="Poesia">
+                        <label for="poesia">Poesia</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="comedia" name="genero" value="Comédia">
+                        <label for="comedia">Comédia</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="ficcao-cientifica" name="genero" value="Ficção Científica">
+                        <label for="ficcao-cientifica">Ficção Científica</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="dark" name="genero" value="Dark">
+                        <label for="dark">Dark</label>
+                    </div>
+
+                    <div class="check-item">
+                        <input type="checkbox" id="outro" name="genero" value="Outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                </div>
+
+                <label for="frequencia">
+                    Frequência de Leitura:
+                </label>
+
+                <select name="frequencia" id="frequencia">
+                    <option value="">Selecione</option>
+                    <option value="pouco">Pouco</option>
+                    <option value="medio">Médio</option>
+                    <option value="alta">Alta</option>
+                </select>
+
+                <label for="gostar">
+                    O quanto gosta de ler?
+                </label>
+
+                <input type="range" id="gostar" name="gostar" min="0" max="10" value="0" oninput="valor.textContent = this.value">
+
+                <output id="valor">0</output>
+
+                <label for="leitura">
+                    Livros lidos por mês:
+                </label>
+
+                <input type="number" id="leitura" name="livros_mes" min="0" max="30">
+
+                <label for="autor">
+                    Autor favorito:
+                </label>
+
+                <input type="text" id="autor" name="autor" maxlength="50">
+
+                <input type="submit" value="Enviar Cadastro">
+                <input type="reset" value="Limpar Campos">
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
