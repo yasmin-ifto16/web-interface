@@ -1,0 +1,15 @@
+header {
+    background: linear-gradient(135deg, #2d0a4e, #6626a1);
+    padding: 40px 0 30px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    color: aliceblue;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+}
